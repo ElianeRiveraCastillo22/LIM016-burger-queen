@@ -21,7 +21,6 @@ const App = () => {
         <Route path="/cocina/alert" element={<AlertCocina />} />
         <Route path="/cocina/history" element={<HistoryCocina />} />
         <Route path="*" element={<NotFound />} />
-
       </Routes>
     </div>
   );
