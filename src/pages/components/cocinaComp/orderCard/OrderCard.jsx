@@ -75,7 +75,7 @@ const OrderCard = ({ orderCompleto, orderID }) => {
             onClick={handleStateEnd}
             className="entregarPedido"
           >
-            Entregar pedido
+            Entregar pedido al mesero
           </button>
         </div>
       </div>

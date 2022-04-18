@@ -23,6 +23,7 @@
     align-content: center;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 .BoxButton{
     text-decoration: none;
@@ -45,6 +46,7 @@
     font-size: 20px;
     font-family: 'Barlow', sans-serif;
     color: #ffff;
+    cursor: pointer;
 }
 .BtnLogin:hover{
     opacity: 1;

@@ -14,7 +14,7 @@
             .descriptionStateAlertCocina{
                 display: flex;
                 align-items: center;
-                font-size: 2.5rem;
+                font-size: 2rem;
                 height: 10%;
                 width: 100%;
                 margin-left: 2%;
@@ -37,34 +37,36 @@
                     width: 50%;
                     justify-content: center;
                     align-items: center;
-                    font-family: "Barlow", sans-serif;
                     .cardAlertCocina{
-                        font-family: "Barlow", sans-serif;
                         background-color: map-get(color.$background, "conteiners" );
                         height: 90%;
                         width: 90%;
                         border-radius: 20px;
                         padding: 5%;
                         color: white;
-                        .headerCardChef{
-                            height: 20%;
+                        cursor: pointer;
+                        .detailsAlertCocina{
+                            overflow-y: scroll;
+                            height:70% ;
+                            width: 100%;
+                            font-family: "Bitter", serif;
+                            font-weight: bolder;
+                            p{
+                                margin: 10px 0px;
+                            }
+                        }
+                        .footerCardChef{
+                            height: 30%;
                             width: 100%;
                             display: grid;
                             grid-template-columns: 50% 50%;
-                            justify-items: center;
                             align-items: center;
                             span{
+                                font-weight: bolder;
                                 color: map-get(color.$buttons,  "color" )
                             }
                         }
-                        .detailsAlertCocina{
-                            height:80% ;
-                            width: 100%;
-                            overflow-y: scroll;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                        }
+
                     }
                 }
 

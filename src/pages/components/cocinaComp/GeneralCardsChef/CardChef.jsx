@@ -12,16 +12,17 @@ console.log(filterOrder.stateOrder)
   };
 
   return (
-    <div className="cardChef" onClick={handleOrder}>
-
-      <div className="itemsCardChef">
-        {itemsOrder.map((item) => (
-          <p key={item.idItemOrder}>{item.nameItemOrder}</p>
-        ))}
-      </div>
-      <div className="headerCardChef">
-        <p className="descriptionCampo"> Tiempo:</p>
-        <p> {FunctionTime(startTime)} </p>
+    <div className="backgroundCardCocina">
+      <div className="cardCocina" onClick={handleOrder}>
+        <div className="detailsCocina">
+          {itemsOrder.map((item) => (
+            <p key={item.idItemOrder}>○ {item.nameItemOrder}</p>
+          ))}
+        </div>
+        <div className="footerOrderSalon">
+          <span className="descriptionCampo"> Tiempo:</span>
+          <p> {FunctionTime(startTime)} </p>
+        </div>
       </div>
     </div>
   );

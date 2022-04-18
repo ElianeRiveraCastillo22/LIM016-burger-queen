@@ -2,9 +2,9 @@
 
 .gridBtnChef{
     font-family: "Barlow", sans-serif;
-    padding: 0px 15px;
-    height: 12%;
-    font-size: 2.5rem;
+    margin-left: 2%;
+    height: 10%;
+    font-size: 2rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -26,56 +26,52 @@
     background-color: map-get(color.$buttons, "color");
     height:55%;
 }
-.backgroudCardsChefGeneral{
+.contentCardAlertCocina{
     display: flex;
-    height: 88%;
-    width: 60%;
+    height: 90%;
     width: 100%;
-    flex-direction: row;
     flex-wrap: wrap;
     overflow-y: scroll;
-    .cardChef {
-    flex-wrap: wrap;
-    width: 45%;
-    height: 30%;
-    background: map-get(color.$background, "conteiners");
-    color: map-get(color.$text, "button");
-    border-radius: 25px;
-    font-family: 'Barlow', sans-serif;
-    margin: 2%;
-
-    .headerCardChef {
+    .backgroundCardCocina{
         display: flex;
-        width: 90%;
-        height: 30%;
-        text-align: center;
+        height: 33.3%;
+        width: 50%;
         justify-content: center;
         align-items: center;
-        align-content: center;
-        flex-direction: row;
-        margin: 5px;
-        .descriptionCampo{
-            color: map-get(color.$text, "description");
-        }
-        p{
-            width:100%;
-        }
-        .fa-clock-eight{
-            height: 50px;
-            width: 50px;
+          .cardCocina{
+            font-family: "Barlow", sans-serif;
+            background-color: map-get(color.$background, "conteiners" );
+            height: 90%;
+            width: 90%;
+            border-radius: 20px;
+            padding: 5%;
+            color: white;
+            cursor: pointer;
+            .detailsCocina{
+                overflow-y: scroll;
+                height:70% ;
+                width: 100%;
+                font-family: "Bitter", serif;
+                font-weight: bolder;
+                p{
+                    margin: 10px 0px;
+                }
+            }
+            .footerOrderSalon {
+                height: 30%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: center;
+                font-family: "Barlow", sans-serif;
+                span{
+                    font-weight: bolder;
+                    color: map-get(color.$buttons,  "color" )
+                }
+            }
         }
     }
-    .itemsCardChef{
-        display: flex;
-        height: 70%;
-        width: 100%;
-        text-align: start;
-        overflow-y: scroll;
-        padding: 15px;
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+
 }
 
 .itemsCardChef::-webkit-scrollbar{

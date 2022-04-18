@@ -86,6 +86,7 @@
     input{
         height: 50%;
         width: 50%;
+        cursor: pointer;
     }
     .num{color: white;
         font-size: 1.5rem;
@@ -93,16 +94,20 @@
     div{
         color: white;
         font-size: 1.05rem;
-        padding: 0% 4%;
+        padding: 0% 10%;
         height: 100%;
         width: 100%;
         display: grid;
         align-items: center;
+        border-left:solid 1px;
         h3{
             color: white;
         }
         p{
-            color:#C4C4C4
+            color:#C4C4C4;
+            span{
+                color: #ff9d8c;
+            }
         }
     }
     // input[type="checkbox"]:checked {
@@ -136,6 +141,7 @@
 .GeneralDeilsOrderCard {
     height: 78%;
     overflow-y: scroll;
+    margin-bottom: 5%;
 }
 
 .entregarPedido {

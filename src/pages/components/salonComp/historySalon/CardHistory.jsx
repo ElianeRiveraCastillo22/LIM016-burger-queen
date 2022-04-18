@@ -4,12 +4,12 @@ const CardHistory=({list})=>{
             <div className="backgroundCardHistorySalon">
                 <div className="cardHistorySalon">
                     <div className="headerOrderHistory">
-                        <p><span>nº de mesa: </span>{list.numOrder}</p>
-                        <p>{list.nameOrder}</p>
+                        <p><span># de mesa: </span>{list.numOrder}</p>
+                        <p><span>nombre:</span> {list.nameOrder}</p>
                     </div>
                     <div className="detailsHistoryOrderSalon">
                         {listItemOrder.map((item ) => {
-                        return <p> {item.nameItemOrder}</p>
+                        return <p>○ {item.nameItemOrder}</p>
                         })}
                     </div>
                     <p className="TotalHistory"><span>Total:</span>S/. {list.totalPriceOrder}</p>

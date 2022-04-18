@@ -32,8 +32,8 @@ const OrderAlert=({newOrderList,orderAlertIdSalon})=>{
         <hr />
         <div className="flexOrderDescriptionAlert">
             <div className="gridTitleOrderAlert">
-            <p className="unidad">Unidad</p>
-            <p className="description">Description</p>
+                <p className="unidad">Unidad</p>
+                <p className="description">Description</p>
             </div>
             <div className="generalDeilsOrderCardAlert">
             {itemsOrder.map((details) => (

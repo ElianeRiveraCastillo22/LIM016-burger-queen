@@ -31,12 +31,12 @@ export const DetailsOrderCard = ({ details, checkHandler,checkboxes }) => {
       <p className="num" >{numItemOrder}</p>
       <div>
         <h3>{nameItemOrder}</h3>
-        <p>Detalle:{optionOrder}</p>
+        <p><span>Detalle:</span>{optionOrder}</p>
         <p>
           {extraOrder1}
           {extraOrder2}
         </p>
-        <p>Nota: {noteOrder}</p>
+        <p><span>Nota:</span> {noteOrder}</p>
       </div>
     </div>
   );

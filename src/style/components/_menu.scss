@@ -35,6 +35,7 @@
             border: none;
             color: map-get(color.$text, "button");
             border-radius: 8px;
+            cursor: pointer;
         }
         button:hover{
             opacity: 1;

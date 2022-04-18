@@ -3,6 +3,7 @@ import '../style/app.scss';
 import Cocina from '../pages/Cocina';
 import Login from '../pages/Login';
 import Salon from '../pages/Salon';
+
 import NotFound from '../pages/Notfound';
 import { AlertSalon } from '../pages/components/salonComp/alertSalon/AlertSalon';
 import { HistorySalon } from '../pages/components/salonComp/historySalon/HistorySalon';

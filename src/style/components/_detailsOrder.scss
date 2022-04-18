@@ -69,8 +69,8 @@
                 display: grid;
                 grid-template-columns:30% 70%;
                 color: white;
-                p{
-
+                .num{
+                    border-right: solid 1px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -80,6 +80,8 @@
                     justify-content: center;
                     flex-direction: column;
                     align-items: flex-start;
+                    margin-left: 20px;
+                    min-height: 130px;
                     h3{
                         font-size: 1.1rem;;
                         height:30% ;
@@ -106,6 +108,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 10px;
             button{
                 background-color: map-get(color.$buttons , "prueba" );
                 color:map-get(color.$text , "textPrueba" );
@@ -113,6 +116,7 @@
                 height: 90% ;
                 border-radius: 15px;
                 font-size: 1.2rem;
+                cursor: pointer;
             }
         }
     }

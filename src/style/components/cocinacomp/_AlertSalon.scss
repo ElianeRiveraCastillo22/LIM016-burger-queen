@@ -32,6 +32,7 @@
             display: flex;
             flex-wrap: wrap;
             overflow-y: scroll;
+            font-family: "Barlow", sans-serif;
             .backgroundCardAlertSalon{
                 display: flex;
                 height: 33.3%;
@@ -45,11 +46,13 @@
                     border-radius: 20px;
                     padding: 5%;
                     color: white;
+                    cursor: pointer;
                     .detailsAlertCocina{
                         overflow-y: scroll;
                         height:70% ;
                         width: 100%;
                         font-family: "Bitter", serif;
+                        font-weight: bolder;
                         p{
                             margin: 10px 0px;
                         }

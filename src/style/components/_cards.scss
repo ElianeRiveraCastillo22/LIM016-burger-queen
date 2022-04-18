@@ -24,6 +24,7 @@
     border-radius: 8px;
     font-size: 14px;
     line-height: 130%;
+    cursor: pointer;
 
     .photoDish{
         height: 60%;
@@ -42,6 +43,7 @@
         color: map-get(color.$text, "button");
         row-gap: 10px;
         text-align: center;
+        font-weight: bolder;
         .textInfo1{
           text-align: center;
         }
