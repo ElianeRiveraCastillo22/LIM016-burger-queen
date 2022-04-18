@@ -1,0 +1,67 @@
+/* @use '../../vars/colors' as color;
+
+.headerHistory{
+    display: flex;
+    height: 15%;
+    width: 100%;
+    margin-top: 2%;
+
+    .titleHistory{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        h2{
+            color: map-get(color.$text , "title");
+            font-family: "Barlow", sans-serif;
+            font-weight: normal;
+            font-size: 2rem;
+            line-height: 5rem;
+        }
+    }
+    .selectHistory{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        width: 70%;
+        column-gap: 16px;
+        margin-right: 3.5%;
+        button{
+            font-size: 1rem;
+            padding: 0.8rem 2rem;
+            width: 150px;
+            background-color: map-get(color.$buttons, "color");
+            border: none;
+            color: map-get(color.$text, "button");
+            border-radius: 8px;
+        }
+        button:hover{
+            opacity: 1;
+            box-shadow:
+                        0 0 25px map-get(color.$buttons, "color");
+        }
+    }
+}
+
+.contentHistory{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 10px;
+    font-family: "Barlow", sans-serif;
+    overflow-y: scroll;
+    height: 80%;
+    align-items: center;
+}
+
+.contentHistory::-webkit-scrollbar{
+    height: 90%;
+    width: 7px;
+    background: map-get(color.$background, "conteiners");
+}
+.contentHistory::-webkit-scrollbar-thumb{
+    background: map-get(color.$buttons, "color");
+    border-radius: 8px;
+} */

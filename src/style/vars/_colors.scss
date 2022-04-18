@@ -1,0 +1,36 @@
+$background :(
+    "general" :#ffff ,
+    "conteiners":#1F1D2B,
+    "textarea": #2D303E,
+    "textarea2": #363d57,
+    "modal":#666666,
+    "border":#969494,
+);
+$text:(
+    "title":#1F1D2B,
+    "color":#666666,
+    "description":#ff9d8c,
+    "button":#ffff,
+    "textarea":rgb(224, 223, 223),
+    "textCompletado":#50D1AA,
+    "textProceso":#9290FE,
+    "textPendiente":#FCBA7E,
+    "textPrueba":rgba(234, 124, 105, 1),
+);
+
+$buttons:(
+    "color":#EA7C69,
+    "color1":#703C32,
+    "color2":#B05E4F,
+    "color3":#F0806C,
+    "color4":#F0806C,
+    "color5":#ff9d8c,
+    "icon":#1F1D2B,
+    "icon2":#969494,
+    "select": #ececec,
+    "completado": rgba(107, 226, 190, 0.3),
+    "generado": rgba(255, 225, 0, 0.401),
+    "proceso":rgba(146, 144, 254, 0.3),
+    "pendiente":rgba(255, 181, 114, 0.3),
+    "prueba":rgba(234, 124, 105, 0.3)
+)

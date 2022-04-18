@@ -1,0 +1,29 @@
+@forward '../style/components/nav';
+@forward '../style/components/buttons';
+@forward '../style/components/cards';
+@forward '../style/components/menu';
+@forward './components/cocinacomp/AlertSalon';
+@forward './components/cocinacomp/HistorySalon';
+@forward './components/saloncomp/AlertChef';
+@forward './components/saloncomp/HistoryCocina';
+@forward './components/detailsOrder';
+
+@forward '../style/pages/login';
+@forward '../style/pages/salon';
+@forward '../style/pages/cocina';
+
+@forward '../style/components/utils/mediaSalon';
+@forward '../style/components/cocinacomp/cardsChef';
+@forward '../style/components/cocinacomp/detailsCardChef';
+
+@forward '../style/components/history/history';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,364 @@
+@forward '../../style/components/order';
+@use '../vars/colors' as color;
+
+.salonGeneral{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    background: #f0f2f559;
+}
+.bodySalon{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 100vh;
+    width: 90%;
+}
+.menu{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+.formOrder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 44.5%;
+    height: 100%;
+    font-family: "Barlow", sans-serif;
+    hr{
+        width: 90%;
+    }
+}
+
+
+
+
+ /* .salonGeneral{
+    height: 100vh;
+    width: 100%;
+    max-width: 10000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.headerSalon {
+    display: flex;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+.navSalon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 98%;
+    border: solid 1px #1F1D2B;
+    border-radius: 20px;
+    background: #1F1D2B;
+    flex-direction: row;
+    cursor: pointer;
+    a {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    img{
+        height: 80%;
+    }
+    i{
+        font-size:2.5rem ;
+        color: map-get(color.$background, "general");
+    }
+    i:hover{
+        color: map-get(color.$buttons, "color");
+    }
+}
+}
+
+.bodySalon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 92vh;
+    width: 100%;
+    .menu{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .headerMenu{
+        display: flex;
+        height: 8%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .selectMenu {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            button{
+                border: 0;
+                border-radius: 0.25em;
+                background: initial;
+                background-color: #ea7c69 ;
+                color: #fff;
+                font-size: 1em;
+                height: 90%;
+                width: 33.3%;
+                margin: 1%;
+            }
+
+        }
+    }
+    .dishGeneral {
+        height: 92%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: "Barlow", sans-serif;
+        overflow-y: scroll;
+        align-items: center;
+        justify-content: center;
+        .carDish {
+            display: flex;
+            border: solid 1px black;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            height: 50%;
+            background-color: #1F1D2B;
+            color: #ffff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 8px;
+            font-size: 14px;
+            line-height: 130%;
+            margin: 1.5%;
+          }
+        .photoDish{
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 50%;
+            }
+        }
+        .infoDish{
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: map-get(color.$text, "button");
+            row-gap: 10px;
+            text-align: center;
+            .textInfo1{
+              text-align: center;
+            }
+            .textInfo1{
+                width: 90%;
+                font-weight: bold;
+                text-align: center;
+            }
+      }
+    }
+}
+.formOrder {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    .headerOrder{
+        height: 30%;
+        margin: 2%;
+        display: flex;
+        flex-direction: column;
+        .btnSubmitOrder {
+            height: 30%;
+            width: 100%;
+            font-size: 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: map-get(color.$buttons , "color");
+            color: map-get(color.$background , "general");
+        }
+        .btnSubmitOrder:hover{
+            opacity: 1;
+            box-shadow:
+            0 0 25px map-get(color.$buttons, "color");
+        }
+        .infoOrder{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            input{
+                font-size: 1.1rem;
+                height: 50%;
+                color: map-get(color.$text , "color");
+                font-family: "Barlow", sans-serif;
+                border: none;
+                outline: none;
+            }
+        }
+
+    }
+    .itemsTotalOrder{
+        height: 55%;
+overflow-y: scroll;
+        .itemOrderBox{
+            padding: 2%;
+            margin: 0.5rem;
+            display: flex;
+            width: 96%;
+            height: 55%;
+            color: map-get(color.$background , "title");
+            border: map-get(color.$background , "border") solid 1px;
+            border-radius: 8px;
+            .descriptionOrderItem{
+                height: 50%;
+                width: 100%;
+
+                .infoDish{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                .photo{
+                    display: flex;
+                    justify-content: center;
+                    width: 30%;
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    p{
+                        width: 100%;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: map-get(color.$text , "title");
+                    }
+                }
+    
+            .noteOrder{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 2%;
+                height: 50%;
+                    textarea{
+                        padding: 5px;
+                        width: 75%;
+                        height: 2rem;
+                        background-color: map-get(color.$background, "textarea");
+                        color: map-get(color.$text , "button");
+                        border: 1px solid #393C49;
+                        box-sizing: border-box;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 8px;
+                        outline: none;
+                        overflow-x: hidden;
+                        resize: none;
+                    }
+                    textarea:hover{
+                        background-color: map-get(color.$background, "textarea2");
+                        color:map-get(color.$text, "button") ;
+                    }
+                    textarea::placeholder{
+                        color: map-get(color.$text , "textarea");
+                        border: none;
+                    }
+                    textarea::-webkit-scrollbar{
+                        height: 90%;
+                        width: 7px;
+                        background-color: map-get(color.$background, "textarea");
+                        border-radius: 9px;
+    
+                    }
+            }
+            }
+            .buttonsOrderBox{
+                height: 100%;
+                width: 30%;
+                flex-direction: column;
+                .deleteOrder {
+                    height: 25%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    button{
+                        border: solid 0px;
+                        background: none;
+                    }
+                }
+                .secondRowButtons{
+                    height: 25%;
+                    width: 100%;
+                    p{
+                        display: flex;
+                        justify-content: center;
+
+                    }
+                }
+                .firstRowButtons{
+                    height: 50%;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    button{
+                        background: none;
+                        border: solid 0px;
+                        font-size: 1.8rem;
+                    }
+            }
+            }
+
+        }
+    }
+    .priceOrder{
+        height: 15%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

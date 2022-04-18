@@ -1,0 +1,665 @@
+/* @use '../../vars/colors' as color;
+@media (min-width: 0px) and (orientation: landscape) { 
+    .salonGeneral{
+        height: 100vh;
+        width: 100%;
+        max-width: 10000px;
+        display: flex;
+        align-items: center;
+        overflow-y: hidden;
+    }
+    .bodySalon{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        height: 100vh;
+        width: 90%;
+    }
+    .menu{
+        height: 100%;
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+    .formOrder {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 44.5%;
+        height: 100%;
+        font-family: "Barlow", sans-serif;
+        hr{
+            width: 90%;
+        }
+    }
+    .headerOrder{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        width: 95%;
+        height: 14.8%;
+        color: map-get(color.$text , "color");
+        justify-content: center;
+
+        .infoOrder{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            height: 56%;
+            width: 100%;
+            input{
+                font-size: 1.1rem;
+                height: 50%;
+                color: map-get(color.$text , "color");
+                font-family: "Barlow", sans-serif;
+                border: none;
+                outline: none;
+            }
+            input:active{
+                border: none;
+                border-radius: 8px;
+            }
+            p{
+                align-self: flex-start;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 130%;
+            }
+            hr {
+                width: 98%;
+              }
+        }
+    }
+    .bodySalon{
+        width: 90%;
+        height: 100vh;
+    }
+    
+    .btnSubmitOrder {
+        height: 44%;
+        width: 100%;
+        font-size: 20px;
+        border: none;
+        border-radius: 8px;
+        background-color: map-get(color.$buttons , "color");
+        color: map-get(color.$background , "general");
+    }
+    .btnSubmitOrder:hover{
+        opacity: 1;
+        box-shadow:
+                    0 0 25px map-get(color.$buttons, "color");
+    }
+    
+    .itemsTotalOrder{
+        display: flex;
+        padding-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 72%;
+        width: 96%;
+    }
+    .itemsTotalOrder::-webkit-scrollbar{
+        height: 90%;
+        width: 7px;
+        background: map-get(color.$background, "conteiners");
+    }
+    .itemsTotalOrder::-webkit-scrollbar-thumb{
+        background: map-get(color.$buttons, "color");
+        border-radius: 8px;
+    }
+    .itemOrderBox{
+        padding: 2%;
+        margin: 0.5rem;
+        display: flex;
+        width: 98%;
+        height: 20%;
+        color: map-get(color.$background , "title");
+        border: map-get(color.$background , "border") solid 1px;
+        border-radius: 8px;
+    }
+    
+        .descriptionOrderItem{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 70%;
+            .infoDish{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 80%;
+                .photo{
+                    display: flex;
+                    justify-content: center;
+                    width: 30%;
+                    img{
+                        width: 60%;
+                    }
+                }
+            }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    width: 70%;
+                    p{
+                        width: 100%;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 130%;
+                        color: map-get(color.$text , "title");
+                    }
+                }
+    
+            .noteOrder{
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 2%;
+                    textarea{
+                        padding: 5px;
+                        width: 75%;
+                        height: 2rem;
+                        background-color: map-get(color.$background, "textarea");
+                        color: map-get(color.$text , "button");
+                        border: 1px solid #393C49;
+                        box-sizing: border-box;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                        border-radius: 8px;
+                        outline: none;
+                        overflow-x: hidden;
+                        resize: none;
+                    }
+                    textarea:hover{
+                        background-color: map-get(color.$background, "textarea2");
+                        color:map-get(color.$text, "button") ;
+                    }
+                    textarea::placeholder{
+                        color: map-get(color.$text , "textarea");
+                        border: none;
+                    }
+                    textarea::-webkit-scrollbar{
+                        height: 90%;
+                        width: 7px;
+                        background-color: map-get(color.$background, "textarea");
+                        border-radius: 9px;
+    
+                    }
+            }
+        }
+    .buttonsOrderBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+        padding: 0 2%;
+        .deleteOrder{
+            display: flex;
+            justify-content: flex-end;
+            .trash{
+                margin-right: 2%;
+                background: none;
+                border:none;
+                color: map-get(color.$buttons , "icon2");
+                font-size: 1.2rem;
+            }
+            .trash:hover{
+            color: map-get(color.$buttons , "color");
+            border:none
+        }
+        }
+    
+        .firstRowButtons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            p{
+                align-self: center;
+                font-weight: bold;
+            }
+            button{
+                background: none;
+                border:none;
+                font-size:2.6rem;
+                color: map-get(color.$buttons , "icon2");
+            }
+        }
+        .secondRowButtons{
+            display: flex;
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        button:hover{
+            color: map-get(color.$buttons , "color");
+            border:none
+        }
+    }
+    
+    .priceOrder{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        height: 5%;
+        align-items: center;
+        .item1{
+            margin:  0 10px 0 20px;
+            width: 60%;
+            font-weight: bold;
+        }
+    }
+    
+    .optionsOrder{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        .optionOrder{
+            display: flex;
+            margin-bottom: 2%;
+            .description{
+                color: map-get(color.$text, "description");
+            }
+        }
+        .extraOrder{
+            display: flex;
+            .description{
+                color: map-get(color.$text, "description");
+            }
+            .extraOptions{
+                display: flex;
+                margin: 2%;
+            }
+    
+        }
+    }
+    .headerSalon{
+        display: flex;
+        width: 10%;
+        height: 98%;
+        align-items: center;
+        justify-content: center;
+    }
+    .navSalon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 98%;
+        width: 80%;
+        max-width: 80px;
+        min-width: 20px;
+        border: solid 1px #1F1D2B;
+        border-radius: 20px;
+        background: #1F1D2B;
+        cursor: pointer;
+        a{
+            height: 25%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            i{
+                font-size:2.5rem ;
+                color: map-get(color.$background, "general");
+            }
+            i:hover{
+                color: map-get(color.$buttons, "color");
+            }
+        }
+        img{
+            height: 40%;
+            width: 60%;
+        }
+    
+    }
+    .dishGeneral{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 2%;
+        font-family: "Barlow", sans-serif;
+        overflow-y: scroll;
+        height: 84%;
+        align-items: center;
+}
+
+.carDish{
+    display: flex;
+    border: solid 1px black;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    background-color: map-get(color.$background, "conteiners");
+    color: map-get(color.$text, "button");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 130%;
+
+    .photoDish{
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+    }
+    .infoDish{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: map-get(color.$text, "button");
+        row-gap: 10px;
+        text-align: center;
+        .textInfo1{
+          text-align: center;
+        }
+        .textInfo1{
+            width: 90%;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+    .carDish:hover{
+        box-shadow: 0 0 20px map-get(color.$buttons, "color");
+    }
+    .dishGeneral::-webkit-scrollbar{
+        width: 7px;
+        background: map-get(color.$background, "conteiners");
+    }
+    .dishGeneral::-webkit-scrollbar-thumb{
+        background: map-get(color.$buttons, "color");
+        border-radius: 8px;
+    }
+    .BtnLogin{
+        background-color: map-get(color.$buttons , color );
+        color: map-get( color.$text,"button" ) ;
+       }
+       
+       .swal2-styled.swal2-confirm {
+           border: 0;
+           border-radius: 0.25em;
+           background: initial;
+           background-color: #ea7c69 !important ;
+           color: #fff;
+           font-size: 1em;
+       }
+ } */
+
+
+
+
+
+
+
+
+
+ 
+
+/* @media (min-width: 480px) and (max-width: 820px) {
+    //  .bodySalon{
+    //      background-color: bisque;
+    //  }
+    .headerSalon{
+        width: 12%;
+        .navSalon{
+            width:90%;
+            .logoNav{
+                margin: 0;
+                padding: 0;
+                height: 15%;
+                width: 100%;
+                img{
+                    width: 70%;
+                }
+            }
+            .optionsNav{
+                height: 85%;
+                row-gap: 20%;
+                i{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+    .bodySalon{
+        display: flex;
+        flex-direction: column;
+        // width: 88%; 
+        .menu{
+            height: 45%;
+            width: 95%;
+            .headerMenu{
+                margin-top: 0;
+                justify-content: center;
+                .titleMenu{
+                    display: none;
+                }
+
+            .dishGeneral{
+                margin-top: 10px;
+            }
+        }
+        .formOrder{
+            justify-content: flex-start;
+            height: 60%;
+            width: 95%;
+            margin: 10px;
+            .headerOrder{
+                display:flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                height: 12%;
+                width: 98%;
+                margin: 0px 10px 10px 10px;
+                .btnSubmitOrder{
+                    width: 100%;
+                }
+                .infoOrder{
+                    width: 47%;
+                }
+            }
+            .itemsTotalOrder{
+                height: 60%;
+                row-gap: 0.1rem;
+                .itemOrderBox{
+                    margin: 0;
+                }
+            }
+            .priceOrder{
+                height: 28%;
+            }
+        }
+     }
+    }
+ }
+
+ @media (min-width: 820px) and (max-width: 1180px) {
+// .bodySalon{
+//     background-color: pink;
+// }
+    .headerSalon{
+        width: 12%;
+    }
+    .bodySalon{
+        display: flex;
+        flex-direction: column;
+        // width: 88%; 
+        .menu{
+            height: 45%;
+            width: 95%;
+            .headerMenu{
+                margin-top: 0;
+            }
+            .dishGeneral{
+                margin-top: 10px;
+            }
+        }
+        .formOrder{
+            justify-content: flex-start;
+            height: 60%;
+            width: 95%;
+            margin: 10px;
+            .headerOrder{
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                height: 12%;
+                width: 98%;
+                margin: 0px 10px 10px 10px;
+
+                .btnSubmitOrder{
+                    width: 53%;
+                  // height: 70%; 
+                }
+                .infoOrder{
+                    width: 47%;
+                }
+            }
+            .itemsTotalOrder{
+                height: 65%;
+                row-gap: 0.1rem;
+                .itemOrderBox{
+                    margin: 0;
+                }
+            }
+            .priceOrder{
+                height: 23%;
+            }
+        }
+    }
+ }
+
+ @media (min-width: 900px) and (max-width:  1024px)  and (orientation: landscape){
+    // .bodySalon{
+    //     flex-direction: row;
+    //     background-color: grey;
+    // }
+    .headerSalon{
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        .navSalon{
+            display: flex;
+            height: 100%;
+            .logoNav{
+                margin: 0;
+                padding: 0;
+                width: 80%;
+                img{
+                    height: 5rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .bodySalon{
+        display: flex;
+        flex-direction: row;
+        // width: 90%; 
+        height: 100%;
+        .menu{
+            height: 95%;
+            width: 45%;
+            .headerMenu{
+                display: flex;
+                margin-top: 0;
+                justify-content: center;
+                .titleMenu{
+                    display: none;
+                }
+                .selectMenu{
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+            .dishGeneral{
+                margin-top: 10px;
+            }
+        }
+        .formOrder{
+            height: 95%;
+            width: 55%;
+            .headerOrder{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 20%;
+                .btnSubmitOrder{
+                    width: 98%;
+                    align-self: end;
+                }
+                .infoOrder{
+                    width: 98%;
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+            .itemsTotalOrder{
+                height: 70%;
+            }
+            .priceOrder{
+                height: 10%;
+                align-items: center;
+            }
+        }
+    }
+ }
+
+ @media (min-width: 1024px) and (max-width: 1180px) and (orientation: landscape){
+    .headerSalon{
+        width: 10%;
+    }
+    .bodySalon{
+        display: flex;
+        flex-direction: row;
+        // width: 98%;
+        height: 100%;
+        // background-color: yellowgreen;
+        .menu{
+            height: 95%;
+            .headerMenu{
+                margin-top: 0;
+            }
+            .dishGeneral{
+                margin-top: 10px;
+            }
+        }
+        .formOrder{
+            height: 95%;
+            .headerOrder{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                height: 20%;
+                .btnSubmitOrder{
+                    width: 98%;
+                    align-self: end;
+                }
+                .infoOrder{
+                    width: 98%;
+                    input{
+                        width: 100%;
+                    }
+                }
+            }
+            .itemsTotalOrder{
+                height: 75%;
+            }
+            .priceOrder{
+                height: 5%;
+            }
+        }
+    }
+}
+ */

@@ -1,0 +1,88 @@
+@use '../../vars/colors' as color;
+.bodyHistory{
+    height: 100vh;
+    width: 100%;
+}
+.btnsHistorySalon{
+    height:15% ;
+    width:100% ;
+    display: grid;
+    grid-template-columns:25% 25% 25% 25%;
+     div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            height: 50%;
+            width: 90%;
+            background: map-get(color.$buttons, "color" );
+            border-radius: 20px;
+            color: white;
+            font-size: 1.3rem;
+            border: solid 3px #EA7C69;
+            cursor: pointer;
+        }
+        .click{
+            background: none;
+            color: black;
+        }
+    }
+
+}
+
+.sectionShowHistory{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.backgroundCardHistorySalon{
+    height: 33.3%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .cardHistorySalon{
+        background-color: map-get(color.$background, "conteiners" );
+        height: 90%;
+        width: 90%;
+        border-radius: 20px;
+        padding: 5%;
+        color: white;
+    }
+    .headerOrderHistory{
+        height: 20%;
+        width: 100%;
+        font-family: "Barlow", sans-serif;
+        font-size: 1.02rem;
+        span{
+            color: map-get(color.$buttons,  "color" );
+            margin-right: 4%;
+            font-weight: bold;
+        }
+    }
+    .detailsHistoryOrderSalon{
+        height: 70%;
+        width: 100%;
+        overflow-y: scroll;
+        font-family: "Bitter", serif;
+        padding: 5% 0% 5% 0%;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    .TotalHistory{
+        height: 10%;
+        width: 100%;
+        font-family: "Barlow", sans-serif;
+        font-size: 1.02rem;
+        span{
+            color: map-get(color.$buttons,  "color" );
+            font-weight: bold;
+            margin-right: 4%;
+        }
+    }
+
+}
+
+

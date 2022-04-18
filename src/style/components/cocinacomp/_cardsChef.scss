@@ -1,0 +1,97 @@
+@use '../../vars/colors' as color;
+
+.gridBtnChef{
+    font-family: "Barlow", sans-serif;
+    margin-left: 2%;
+    height: 10%;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.cardsChefGeneral{
+    height: 84.5%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow-y: scroll;
+}
+.SelectChef{
+    height: 55%;
+    border-radius: 14px;
+    border: solid 0px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.4rem;
+    color: map-get(color.$text, "button");
+    background-color: map-get(color.$buttons, "color");
+    height:55%;
+}
+.contentCardAlertCocina{
+    display: flex;
+    height: 90%;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    .backgroundCardCocina{
+        display: flex;
+        height: 33.3%;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+          .cardCocina{
+            font-family: "Barlow", sans-serif;
+            background-color: map-get(color.$background, "conteiners" );
+            height: 90%;
+            width: 90%;
+            border-radius: 20px;
+            padding: 5%;
+            color: white;
+            cursor: pointer;
+            .detailsCocina{
+                overflow-y: scroll;
+                height:70% ;
+                width: 100%;
+                font-family: "Bitter", serif;
+                font-weight: bolder;
+                p{
+                    margin: 10px 0px;
+                }
+            }
+            .footerOrderSalon {
+                height: 30%;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                align-items: center;
+                font-family: "Barlow", sans-serif;
+                span{
+                    font-weight: bolder;
+                    color: map-get(color.$buttons,  "color" )
+                }
+            }
+        }
+    }
+
+}
+
+.itemsCardChef::-webkit-scrollbar{
+    height: 50%;
+    width: 7px;
+    background: map-get(color.$background, "conteiners");
+    border-radius: 8px;
+
+}
+.itemsCardChef::-webkit-scrollbar-thumb{
+    background: map-get(color.$buttons, "color");
+    border-radius: 8px;
+}
+
+.backgroudCardsChefGeneral::-webkit-scrollbar{
+    width: 7px;
+    background: map-get(color.$background, "conteiners");
+    border-radius: 8px;
+}
+.backgroudCardsChefGeneral::-webkit-scrollbar-thumb{
+    background: map-get(color.$buttons, "color");
+    border-radius: 8px;
+}

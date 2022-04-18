@@ -1,0 +1,125 @@
+@use '../vars/colors' as color;
+.detailsAlert {
+    height: 97%;
+    width: 40%;
+    margin: 14px;
+    background: map-get(color.$background , 'conteiners' );
+    border-radius: 20px;
+    font-family: "Barlow", sans-serif;
+    hr{
+        width: 100%;
+    }
+    .headerDescriptionOrderAlert{
+        color: white;
+        display: flex;
+        height: 12%;
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 5%;
+        .headerSpan{
+            color:map-get(color.$buttons , "color5" );
+            margin-right: 4%;
+        }
+
+        p{
+            height: 75%;
+            width: 100%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            margin-top: 2.5%;
+        }
+            p{
+                height: 40%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+                padding: 12px 12px 12px 12px;
+            }
+    }
+    .flexOrderDescriptionAlert{
+        height: 84%;
+        width: 100%;
+        .gridTitleOrderAlert{
+            font-family: "Barlow", sans-serif;
+            font-size: 1.2rem;
+            color:map-get(color.$buttons , "color5" );
+            height: 10%;
+            width: 100%;
+            display: grid;
+            grid-template-columns:30% 70%;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            font-weight: bold;
+        }
+        .generalDeilsOrderCardAlert{
+            display:flex;
+            flex-direction: column;
+            height: 70%;
+            width: 100%;
+            overflow-y: scroll;
+            font-family: "Barlow", sans-serif;
+            font-size: 1rem;
+            .detailsOrderCardAlert{
+                width: 100%;
+                height: 40%;
+                display: grid;
+                grid-template-columns:30% 70%;
+                color: white;
+                .num{
+                    border-right: solid 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                div{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    margin-left: 20px;
+                    min-height: 130px;
+                    h3{
+                        font-size: 1.1rem;;
+                        height:30% ;
+                    }
+                    p{
+                        font-size: 1.1rem;
+                        color: #C4C4C4;
+                        height:20%;
+                        span{
+                            margin: 0px 10px 0px 0px;
+                            color:map-get(color.$buttons, "color5" )
+                        }
+                    }
+                    .description{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+        .contentEntregarPedidoAlert{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            button{
+                background-color: map-get(color.$buttons , "prueba" );
+                color:map-get(color.$text , "textPrueba" );
+                width: 90%;
+                height: 90% ;
+                border-radius: 15px;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,69 @@
+ @use '../vars/colors' as color;
+
+.dishGeneral{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    font-family: 'Bitter', serif;
+    overflow-y: scroll;
+    height: 84%;
+    align-items: center;
+}
+
+.carDish{
+    display: flex;
+    border: solid 1px black;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 30%;
+    background-color: map-get(color.$background, "conteiners");
+    color: map-get(color.$text, "button");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 130%;
+    cursor: pointer;
+
+    .photoDish{
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+    }
+    .infoDish{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: map-get(color.$text, "button");
+        row-gap: 10px;
+        text-align: center;
+        font-weight: bolder;
+        .textInfo1{
+          text-align: center;
+        }
+        .textInfo1{
+            width: 90%;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}
+    .carDish:hover{
+        box-shadow: 0 0 20px map-get(color.$buttons, "color");
+    }
+    .dishGeneral::-webkit-scrollbar{
+        width: 7px;
+        background: map-get(color.$background, "conteiners");
+        border-radius: 8px;
+
+    }
+    .dishGeneral::-webkit-scrollbar-thumb{
+        background: map-get(color.$buttons, "color");
+        border-radius: 8px;
+    } 
