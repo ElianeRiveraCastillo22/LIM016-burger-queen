@@ -47,7 +47,7 @@ function Cocina() {
       <div className="bodyChef">
         <GeneralCardsChef orderByID={orderByID} />
         {verificacion === false ? (
-          <OrderCard 
+          <OrderCard
             orderCompleto={orderCompleto}
             orderID={orderID}
           />

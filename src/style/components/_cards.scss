@@ -1,15 +1,14 @@
  @use '../vars/colors' as color;
 
 .dishGeneral{
-
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        column-gap: 2%;
-        font-family: 'Bitter', serif;
-        overflow-y: scroll;
-        height: 84%;
-        align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    font-family: 'Bitter', serif;
+    overflow-y: scroll;
+    height: 84%;
+    align-items: center;
 }
 
 .carDish{
@@ -59,6 +58,8 @@
     .dishGeneral::-webkit-scrollbar{
         width: 7px;
         background: map-get(color.$background, "conteiners");
+        border-radius: 8px;
+
     }
     .dishGeneral::-webkit-scrollbar-thumb{
         background: map-get(color.$buttons, "color");

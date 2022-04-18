@@ -11,8 +11,6 @@
       color: map-get(color.$text , "color");
     justify-content: center;
 
-
-
     .infoOrder{
         display: flex;
         flex-direction: column;
@@ -78,6 +76,8 @@
     height: 90%;
     width: 7px;
     background: map-get(color.$background, "conteiners");
+    border-radius: 8px;
+
 }
 .itemsTotalOrder::-webkit-scrollbar-thumb{
     background: map-get(color.$buttons, "color");
@@ -158,7 +158,6 @@
                     width: 7px;
                     background-color: map-get(color.$background, "textarea");
                     border-radius: 9px;
-
                 }
         }
     }

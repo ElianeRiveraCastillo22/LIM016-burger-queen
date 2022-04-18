@@ -15,7 +15,7 @@
     padding: 4% 4% 0% 4%;
     height: 22%;
     width: 100%;
-    p{  
+    p{
         height: 33.3%;
         font-family: "Barlow", sans-serif;
         font-size: 1.2rem;
@@ -105,10 +105,9 @@
             color:#C4C4C4
         }
     }
-   
-    input[type="checkbox"]:checked {
-        box-shadow: 0 0 0 3px #EA7C69;
-      }
+    // input[type="checkbox"]:checked {
+    //     box-shadow: 0 0 0 3px #EA7C69;
+    //   }
 }
 
 /* .orderStateGenerado{
