@@ -43,5 +43,8 @@
   "main": "index.js",
   "repository": "git@github.com:ValPizarro/LIM016-burger-queen.git",
   "author": "Eliane Rivera & Valeria Pizarro",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "netlify-cli": "^10.0.0"
+  }
 }
