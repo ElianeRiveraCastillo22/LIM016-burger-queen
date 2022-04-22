@@ -2,9 +2,7 @@ import NavSalon from "../navSalon/NavSalon";
 import {getDoc,doc } from "firebase/firestore";
 import { db } from "../../../../firebase/config";
 import { useState,useEffect } from "react";
-import DetailsSalon from "./OrderAlertSalon/DetailsSalon";
 import OrderGeneradoSalon from "./OrderGeneradoSalon.jsx";
-import { async } from "@firebase/util";
 import OrderAlert from "../alertSalon/OrderAlertSalon/OrderAlert"
 import VacioAlert from "../alertSalon/OrderAlertSalon/vacioAlert"
 export const AlertSalon = () => {
@@ -14,7 +12,6 @@ export const AlertSalon = () => {
   const OrderById=(id)=>{
     return setOrderAlerIdSalon(id)
   }
-  
   const getOrderId= async(id)=>{
     const orderRef =doc(db, "order",id);
     const order = await getDoc(orderRef)
