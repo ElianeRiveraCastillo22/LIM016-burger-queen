@@ -1,9 +1,8 @@
-import { FunctionTime } from "../../../utils/FunctionTime";
 const CardOrderCompletado=({OrderById,orderCompletado})=>{
 
     const IdOrder = orderCompletado.id;
 
-    const { itemsOrder, startTime } = orderCompletado;
+    const { itemsOrder } = orderCompletado;
 
     const handleOrder = () => {
         OrderById(IdOrder);
