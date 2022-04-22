@@ -75,11 +75,23 @@
 }
 
 .itemsCardChef::-webkit-scrollbar{
-    height: 80%;
+    height: 50%;
     width: 7px;
     background: map-get(color.$background, "conteiners");
+    border-radius: 8px;
+
 }
 .itemsCardChef::-webkit-scrollbar-thumb{
+    background: map-get(color.$buttons, "color");
+    border-radius: 8px;
+}
+
+.backgroudCardsChefGeneral::-webkit-scrollbar{
+    width: 7px;
+    background: map-get(color.$background, "conteiners");
+    border-radius: 8px;
+}
+.backgroudCardsChefGeneral::-webkit-scrollbar-thumb{
     background: map-get(color.$buttons, "color");
     border-radius: 8px;
 }

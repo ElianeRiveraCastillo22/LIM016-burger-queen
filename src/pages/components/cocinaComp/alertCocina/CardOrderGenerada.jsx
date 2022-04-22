@@ -14,7 +14,7 @@ export const CardOrderGenerada = ({ orderGenerada, orderByID }) => {
       <div className="cardAlertCocina">
         <div className="detailsAlertCocina">
           {itemsOrder.map((item) => (
-           <p key={item.idItemOrder}>○ {item.nameItemOrder}</p>
+           <p key={item.idItemOrder}> - {item.nameItemOrder}</p>
           ))}
         </div>
         <div className="footerCardChef">

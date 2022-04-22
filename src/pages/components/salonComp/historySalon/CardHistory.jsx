@@ -9,7 +9,7 @@ const CardHistory=({list})=>{
                     </div>
                     <div className="detailsHistoryOrderSalon">
                         {listItemOrder.map((item ) => {
-                        return <p>○ {item.nameItemOrder}</p>
+                        return <p key={item.idItemOrder}> {item.nameItemOrder}</p>;
                         })}
                     </div>
                     <p className="TotalHistory"><span>Total:</span>S/. {list.totalPriceOrder}</p>

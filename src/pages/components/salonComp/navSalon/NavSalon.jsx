@@ -11,7 +11,7 @@ function NavSalon(){
             </NavLink>
             <NavLink to="/salon">
               <i className="fa-solid fa-pen-to-square"/>
-              <span>Menú</span>              
+              <span>Menú</span>
             </NavLink>
             <NavLink to="/salon/alert">
               <i className="fa-solid fa-bell" />
@@ -21,7 +21,6 @@ function NavSalon(){
               <i className="fa-solid fa-clock-rotate-left" />
               <span>Historial</span>
             </NavLink>
-  
         </nav>
       </>
     );

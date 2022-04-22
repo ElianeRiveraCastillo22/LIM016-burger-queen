@@ -8,9 +8,9 @@ import NotFound from '../pages/Notfound';
 import { AlertSalon } from '../pages/components/salonComp/alertSalon/AlertSalon';
 import { HistorySalon } from '../pages/components/salonComp/historySalon/HistorySalon';
 import { AlertCocina } from "../pages/components/cocinaComp/alertCocina/AlertCocina";
-import { HistoryCocina } from '../pages/components/cocinaComp/historyCocina/HistoryCocina'
+import { HistoryCocina } from '../pages/components/cocinaComp/historyCocina/HistoryCocina';
 
-const App = () => {
+function App() {
   return (
     <div className="App">
       <Routes>
@@ -25,6 +25,6 @@ const App = () => {
       </Routes>
     </div>
   );
-};
+}
 
 export default App;

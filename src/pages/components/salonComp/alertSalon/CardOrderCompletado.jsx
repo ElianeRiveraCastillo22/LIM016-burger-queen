@@ -10,17 +10,13 @@ const CardOrderCompletado=({OrderById,orderCompletado})=>{
     };
     return(
         <div className="backgroundCardAlertSalon" onClick={handleOrder}>
-          <div className="cardAlertSalon">
-            <div className="detailsAlertCocina">
-              {itemsOrder.map((item) => (
-                <p key={item.idItemOrder}>○ {item.nameItemOrder}</p>
-              ))}
-            </div>
-            <div className="footerOrderSalon">
-              <span className="descriptionCampo"> Tiempo:</span>
-              <p> {FunctionTime(startTime)}</p>
-            </div>
+        <div className="cardAlertSalon">
+          <div className="detailsAlertCocina">
+            {itemsOrder.map((item) => (
+              <p key={item.idItemOrder}>○ {item.nameItemOrder}</p>
+            ))}
           </div>
+      </div>
       </div>
     )
 }
